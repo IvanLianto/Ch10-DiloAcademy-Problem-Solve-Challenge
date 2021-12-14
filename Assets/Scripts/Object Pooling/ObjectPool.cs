@@ -8,7 +8,6 @@ public class ObjectPool : MonoBehaviour
 
     [SerializeField] private List<GameObject> pooledObjects;
     [SerializeField] private GameObject objectToPools = null;
-    [SerializeField] private int amountToPool = 10;
 
     private void Awake()
     {
@@ -31,7 +30,7 @@ public class ObjectPool : MonoBehaviour
 
     public GameObject GetPooledObject()
     {
-        for (var i = 0; i < amountToPool; i++)
+        for (var i = 0; i < pooledObjects.Count; i++)
         {
             if (!pooledObjects[i].activeInHierarchy)
             {
