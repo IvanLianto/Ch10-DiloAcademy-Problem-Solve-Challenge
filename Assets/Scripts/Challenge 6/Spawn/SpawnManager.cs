@@ -5,10 +5,11 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject square;
-    [SerializeField] private int numberToSpawn;
     [SerializeField] private int counter;
 
     private GameObject circle;
+
+    private int numberToSpawn;
 
     private ObjectPool OP;
 
@@ -19,17 +20,16 @@ public class SpawnManager : MonoBehaviour
         SpawnSquare();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void SpawnSquare()
     {
+        numberToSpawn = Random.Range(5, 15);
+
+        OP.AddObjectPool(square, numberToSpawn);
+
+
         while(counter < numberToSpawn)
         {
-            Vector3 pos = new Vector3(Random.Range(-6.71f, 6.71f), Random.Range(-2.74f, 2.74f));
+            Vector3 pos = new Vector3(Random.Range(-7f, 7f), Random.Range(-3f, 3f));
             var spawn = OP.GetPooledObject();
 
             if ((pos - circle.transform.position).magnitude < 3)

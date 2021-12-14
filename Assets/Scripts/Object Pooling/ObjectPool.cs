@@ -15,15 +15,18 @@ public class ObjectPool : MonoBehaviour
         SharedInstance = this;
 
         pooledObjects = new List<GameObject>();
+    }
+
+    public void AddObjectPool(GameObject obj, int amountToPool = 4)
+    {
         GameObject tmp;
         for (var i = 0; i < amountToPool; i++)
         {
-            tmp = Instantiate(objectToPools);
+            tmp = Instantiate(obj);
             tmp.transform.parent = transform;
             tmp.SetActive(false);
             pooledObjects.Add(tmp);
         }
-
     }
 
     public GameObject GetPooledObject()
