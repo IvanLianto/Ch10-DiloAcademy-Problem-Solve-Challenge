@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallController7 : MonoBehaviour
+public class BallController8 : MonoBehaviour
 {
     Vector3 mousePosition;
 
     [SerializeField] private float moveSpeed;
     [SerializeField] private Vector2 boundary;
+
+    private void Start()
+    {
+        SpawnManager.Instance.Invoke();
+    }
 
     void Update()
     {
@@ -47,6 +52,8 @@ public class BallController7 : MonoBehaviour
             ScoreManager.Instance.SetScore(1, ScoreState.ADD);
             UIMain.Instance.SetScoreText();
             collision.gameObject.SetActive(false);
+
+            SpawnManager.Instance.SetCounter(-1);
         }
     }
 }
