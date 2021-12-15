@@ -56,27 +56,6 @@ public class SpawnManager : MonoBehaviour
         return new Vector3(Random.Range(-7f, 7f), Random.Range(-3f, 3f));
     }
 
-    //public IEnumerator SpawnSquare()
-    //{
-    //    while (counter < numberToSpawn)
-    //    {
-    //        yield return new WaitForSeconds(3f);
-    //        var spawn = OP.GetPooledObject();
-
-    //        if ((RandomPos() - circle.transform.position).magnitude < 3)
-    //        {
-    //            continue;
-    //        }
-    //        else
-    //        {
-    //            spawn.transform.position = RandomPos();
-    //            spawn.transform.rotation = Quaternion.identity;
-    //            spawn.SetActive(true);
-    //            counter++;
-    //        }
-    //    }
-    //}
-
     public void SpawnSquare()
     {
         if (counter < numberToSpawn)
