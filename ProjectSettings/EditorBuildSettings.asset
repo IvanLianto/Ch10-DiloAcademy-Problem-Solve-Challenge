@@ -4,5 +4,35 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: d7475230223064a4ba1c31ca434f76fe
+  - enabled: 1
+    path: Assets/Scenes/Challenge 1.unity
+    guid: 381ceb0c427b74d4c816dd1604fb57e6
+  - enabled: 1
+    path: Assets/Scenes/Challenge 2.unity
+    guid: d4532d1a0c3495a4a9f0d6d269f424ea
+  - enabled: 1
+    path: Assets/Scenes/Challenge 3.unity
+    guid: 87c321052cad9534f8599c1f54ad3c9d
+  - enabled: 1
+    path: Assets/Scenes/Challenge 4.unity
+    guid: 81c5ab0727ac4fa488e4414fa097d074
+  - enabled: 1
+    path: Assets/Scenes/Challenge 5.unity
+    guid: 675ed6fd4c7d6284dbb473e95fd81ec1
+  - enabled: 1
+    path: Assets/Scenes/Challenge 6.unity
+    guid: f54ca75b5c66204408d9482b1c85293e
+  - enabled: 1
+    path: Assets/Scenes/Challenge 7.unity
+    guid: 3a3518fe8490c43468f2400011805cae
+  - enabled: 1
+    path: Assets/Scenes/Challenge 8.unity
+    guid: 0f851d9ebb01df048866a37dec97f04f
+  - enabled: 1
+    path: Assets/Scenes/Challenge 9.unity
+    guid: 4cd3777412ef85044bd31d8c3d43e2cb
   m_configObjects: {}
